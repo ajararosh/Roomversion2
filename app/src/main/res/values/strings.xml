@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RoomApp</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_share">Share</string>
+    <string name="menu_item_1">Menu 1</string>
+    <string name="menu_item_2">Menu 2</string>
 </resources>

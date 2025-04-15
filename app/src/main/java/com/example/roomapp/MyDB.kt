@@ -14,6 +14,8 @@ abstract class MyDB : RoomDatabase(){
     // Accessing the methods to create or get the Database
     companion object{
         // Singleton pattern
+        // Volatile prevent multiple creation of the database
+        @Volatile
         private var Instance: MyDB? = null
 
         // if the Instance is not null, return it

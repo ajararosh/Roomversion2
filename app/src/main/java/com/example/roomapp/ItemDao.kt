@@ -10,13 +10,13 @@ import androidx.room.Update
 @Dao
 interface ItemDao {
     @Insert()
-    fun inserItem(item: Item)
+    suspend fun inserItem(item: Item)
 
     @Delete
-    fun deleteItem(item:Item)
+    suspend fun deleteItem(item:Item)
 
     @Update
-    fun updateItem(item: Item)
+    suspend fun updateItem(item: Item)
 
     @Query("DELETE FROM Item")
     fun deleteAllItems()
